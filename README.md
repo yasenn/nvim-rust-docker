@@ -22,6 +22,7 @@ vimrust <filename.rs>
 - Batteries included:
   - fd
   - shellcheck
+  - shfmt
   - bat
   - fzf
   - ripgrep
