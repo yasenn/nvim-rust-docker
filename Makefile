@@ -28,8 +28,7 @@ build-nc: ## Build the container without caching
 run: ## Run container 
 	docker run -d --rm --env-file=./config.env --name="$(APP_NAME)" $(APP_NAME)
 
-
-up: build run test ## Build & Run container on port configured in `config.env`
+up: build run ## Build & Run container on port configured in `config.env`
 
 stop: ## Stop a running container
 	docker stop $(APP_NAME)
